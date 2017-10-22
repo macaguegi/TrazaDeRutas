@@ -1,0 +1,53 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #mapa {
+        width: 50%;
+        height: 100%;
+        border: 2px solid darkblue;
+        
+        float: left;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #c65353
+      }
+
+      #encabezado{
+        color:#00004d;
+        font-family: "Arial", Times, serif;
+        background-color:#ff8080;
+      }
+
+      #formulario{
+        float:left;
+        color:#ffffff;
+        font-family: "Arial", Times, serif;
+      }
+
+    #tablaDatos{
+      float:right;
+    }
+  #boton {
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      font-size: 18px;
+      display: inline-block;
+      color: #FFF;
+      background: #2980B9;
+      padding: 15px 30px;
+      white-space: nowrap;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      margin: 5px 5px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+  }
+

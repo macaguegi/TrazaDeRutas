@@ -1,0 +1,61 @@
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Traza de rutas locales y remotas</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css" media="screen">
+		<script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhneYSXurXdsaIdAQZEIQzyXAQGL1WNqc&callback=initMap">
+	    </script>
+	    <script src="logicaMapa.js" language="JavaScript"></script>
+	    <script src="jquery-3.2.1.min.js"></script>
+		</head>
+		
+
+	<body>
+		<center><section id="encabezado">
+			<h1>TRAZA DE RUTAS LOCALES Y REMOTAS</h1>
+			<h3>Diego Alejandro Hernandez Cod. 20141020271</h3>
+			<h3>María Camila Guerrero Giraldo Cod. 20142020051</h3>
+			<h4>Redes de Comunicaciones II . Ing. Paulo Alonso Gaona</h4>
+		</section></center>
+
+		<aside> </aside>
+
+		<section id="formulario">
+			Seleccione el continente y el servidor para hacer el respectivo traceroute   <form action="index.html" id="seleccion">
+			<select name="Continente" id="continente" >
+				<option value="">--Selecciona--</option>
+				<option value="NorteAmerica">Norte America</option>
+				<option value="CentroAmerica">Centroamerica</option>
+				<option value="SurAmerica">Suramerica</option>
+				<option value="Europa">Europa</option>
+				<option value="Oceania">Oceania</option>
+				<option value="Africa">Africa</option>
+			</select>
+			
+		<section id = "tablaDatos">
+			Visualización de la información de la traza de ruta.
+			<input type="button" value="Hacer tabla" id="cargarTabla">
+			<div id="tablaRutas"></div>
+		</section>
+			<select name="pagina" id="pagina">
+				<option value="">--Selecciona--</option>
+				<option value="Google">Google</option>
+				<option value="Youtube">Youtube</option>
+				<option value="Facebook">Facebook</option>
+				<option value="Wikipedia">Wikipedia</option>
+				<option value="Baidu">Baidu</option>
+			</select>
+			<input type="button" value="Hacer Traceroute" id="boton" onclick="cargarMapa()" />
+		</form>
+		</section>
+		
+		<section id="mapa">
+		</section>
+
+		
+
+	</body>
+	</html>
